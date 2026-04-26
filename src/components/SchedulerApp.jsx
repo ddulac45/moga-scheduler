@@ -1917,7 +1917,7 @@ export function SchedulerApp({ auth, data }){
 
   // Pending
   useEffect(()=>{
-    if(!loaded)return;
+    if(!data.loaded)return;
     if(firstLoad.current){firstLoad.current=false;return;}
     setPending(true);
   },[physicians,crossCoverage,ptoList,noCallList,permNoCallList,holidays,adHocClosures,clinicHours]);
